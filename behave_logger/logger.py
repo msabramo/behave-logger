@@ -29,7 +29,7 @@ def get_logger(class_name):
         ch.setLevel(logging.CRITICAL)
 
         # Create formatter
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s  ->  [%(name)s]')
 
         # Add formatter to ch
         ch.setFormatter(formatter)
